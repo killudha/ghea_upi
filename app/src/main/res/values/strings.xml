@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ghea_upi</string>
+    <string name="berita_upi">Berita UPI</string>
+    <string name="selengkapnya">Selengkapnya</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="akademik">AKADEMIK</string>
+    <string name="penelitian">PENELITIAN</string>
+    <string name="pengabdian">PENGABDIAN</string>
+    <string name="hero_title">Melesat Bersama\nDemi UPI Gemilang</string>
+    <string name="hero_subtitle">Memajukan ilmu pengetahuan, mengembangkan bakat, dan memperkuat reputasi global Indonesia</string>
+    <string name="news_title_1">Targetkan Mutu Internasional, YPSL Bumi Siliwangi Perkuat Sinergi Lewat Halalbihalal</string>
+    <string name="news_desc_1">Bandung, UPI Yayasan Penyelenggara Sekolah Laboratorium (YPSL) Bumi Siliwangi menyelenggarakan Halalbihalal keluarga besar dengan tema \"Hikmah Ramadhan dan Idul Fitri untuk Memacu&#8230;</string>
+    <string name="news_title_2">UPI Raih Penghargaan Diktisaintek Berdampak 2024</string>
+    <string name="news_desc_2">Universitas Pendidikan Indonesia kembali menorehkan prestasi gemilang dengan meraih penghargaan kategori Diktisaintek Berdampak 2024&#8230;</string>
+    <string name="news_title_3">Inovasi Pendidikan Digital UPI di Era Global</string>
+    <string name="news_desc_3">UPI terus mendorong transformasi digital dalam sistem pendidikan nasional melalui berbagai inovasi teknologi yang dikembangkan oleh civitas akademika&#8230;</string>
+    <string name="lokasi_kampus">Lokasi Kampus UPI</string>
+    <string name="kampus_utama">Kampus Utama UPI Bandung</string>
+    <string name="kampus_purwakarta">Kampus UPI Purwakarta</string>
+    <string name="kehidupan_kampus_title">Kehidupan\nKampus UPI</string>
+    <string name="kehidupan_kampus_desc">Kehidupan di Universitas Pendidikan Indonesia (UPI) bukan hanya tentang belajar, tetapi juga tentang berkembang dan berkontribusi melampaui batas akademik.</string>
+    <string name="tautan">Tautan</string>
+    <string name="tautan_list">• Portal Mahasiswa\n• Portal Dosen\n• Perpustakaan\n• Jurnal UPI</string>
+    <string name="kontak_kami">Kontak Kami</string>
+    <string name="alamat_footer">Jl. Dr. Setiabudhi No. 229 Bandung 40154\nE-mail: humas@upi.edu</string>
+    <string name="copyright">© 2025 - Universitas Pendidikan Indonesia</string>
+</resources>

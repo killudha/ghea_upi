@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Content Area -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 1. Hero Section (Slider) -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/hero_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!-- Shortcut Boxes Overlay -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="4dp"
+                    android:elevation="10dp">
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        app:cardBackgroundColor="#CC9F0612"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="0dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="AKADEMIK"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        app:cardBackgroundColor="#CC9F0612"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="0dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="PENELITIAN"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        app:cardBackgroundColor="#CC9F0612"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="0dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="PENGABDIAN"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- 2. Berita UPI Section (Slider) - FIXED HEIGHT -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/news_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@color/primary_maroon" />
+
+            <!-- 3. Lokasi Kampus UPI Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Lokasi Kampus UPI"
+                    android:textColor="@color/text_dark"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:columnCount="2">
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="180dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="32dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/isola_new" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="12dp"
+                            app:cardBackgroundColor="#CC212529"
+                            app:cardCornerRadius="20dp"
+                            app:strokeWidth="0dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="14dp"
+                                android:paddingVertical="8dp"
+                                android:text="Kampus Utama UPI Bandung"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </com.google.android.material.card.MaterialCardView>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="180dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="8dp">
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="32dp"
+                            app:cardElevation="0dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/pwk" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:layout_marginBottom="12dp"
+                            app:cardBackgroundColor="#CC212529"
+                            app:cardCornerRadius="20dp"
+                            app:strokeWidth="0dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="14dp"
+                                android:paddingVertical="8dp"
+                                android:text="Kampus UPI Purwakarta"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+                        </com.google.android.material.card.MaterialCardView>
+                    </FrameLayout>
+                </GridLayout>
+            </LinearLayout>
+
+            <!-- 4. Kehidupan Kampus UPI Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_maroon"
+                android:orientation="vertical"
+                android:padding="32dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kehidupan\nKampus UPI"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Kehidupan di Universitas Pendidikan Indonesia (UPI) bukan hanya tentang belajar, tetapi juga tentang berkembang dan berkontribusi melampaui batas akademik."
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:layout_marginTop="32dp">
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginEnd="40dp"
+                        app:cardCornerRadius="40dp"
+                        app:cardElevation="0dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/prestasi_1" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="200dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="bottom|end"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="16dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/prestasi_5" />
+                    </com.google.android.material.card.MaterialCardView>
+                </FrameLayout>
+            </LinearLayout>
+
+            <!-- 5. Partner Logos Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ppid_en_"
+                    android:scaleType="fitCenter" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ult_en_"
+                    android:scaleType="fitCenter" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/tv_upi"
+                    android:scaleType="fitCenter" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/lapor_en_"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+
+            <!-- 6. Footer Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1A1A1A"
+                android:orientation="vertical"
+                android:padding="24dp">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/upi_logo_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Tautan"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="• Portal Mahasiswa\n• Portal Dosen\n• Perpustakaan\n• Jurnal UPI"
+                    android:textColor="@color/white"
+                    android:lineSpacingExtra="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Kontak Kami"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Jl. Dr. Setiabudhi No. 229 Bandung 40154\nE-mail: humas@upi.edu"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="32dp"
+                    android:background="#33FFFFFF" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="© 2025 - Universitas Pendidikan Indonesia"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- HEADER Area LAST to be on top of Z-order -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:background="@android:color/transparent">
+
+        <!-- 1. Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/uk"
+                    android:scaleType="fitXY" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/id"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 2. Floating Navbar -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/primary_maroon"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="4dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/upi_logo_white"
+                    android:scaleType="fitCenter" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="#60FFFFFF" />
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/diktisaintek_berdampak"
+                    android:scaleType="fitCenter" />
+
+                <HorizontalScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+                    android:layout_marginStart="8dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView style="@style/NavMenuItem" android:text="Beranda" android:textColor="@color/accent_gold" />
+                        <TextView style="@style/NavMenuItem" android:text="Tentang ▾" />
+                        <TextView style="@style/NavMenuItem" android:text="Pendidikan ▾" />
+                        <TextView style="@style/NavMenuItem" android:text="Penelitian" />
+                        <TextView style="@style/NavMenuItem" android:text="Pengabdian" />
+                        <TextView style="@style/NavMenuItem" android:text="Admisi" />
+                        <TextView style="@style/NavMenuItem" android:text="Berita" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_launcher_foreground"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

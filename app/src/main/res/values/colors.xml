@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_maroon">#9F0612</color>
+    <color name="primary_dark_maroon">#7A0000</color>
+    <color name="topbar_dark">#1A1A1A</color>
+    <color name="accent_gold">#FFCC00</color>
+    <color name="bg_light">#F8F9FA</color>
+    <color name="text_dark">#212529</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+</resources>
