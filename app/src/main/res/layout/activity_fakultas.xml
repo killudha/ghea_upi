@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <!-- 1. Header Spacer -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="108dp" />
+
+            <!-- 2. Subheader -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_maroon"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beranda  >  Fakultas"
+                    android:textColor="#E0E0E0"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- 3. Intro Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp">
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="280dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top|start"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="0dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/wisuda" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="bottom|end"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="8dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/isola" />
+                    </com.google.android.material.card.MaterialCardView>
+                </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Akademik"
+                    android:textColor="@color/primary_maroon"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Fakultas"
+                    android:textColor="#333333"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Universitas Pendidikan Indonesia menyelenggarakan berbagai program pendidikan meliputi program sarjana, pascasarjana, profesi, spesialis, dan diploma."
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 4. Faculty Grid (9 Items) -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="12dp">
+
+                <!-- 1. FIP -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/img_akw0mejtiwfpyly7x5p0s6a9h2lyq6ximttobtnzt" />
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:layout_gravity="bottom" android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:background="#444444" android:gravity="center" android:paddingHorizontal="8dp" android:text="FIP" android:textColor="@color/white" android:textSize="10sp" />
+                                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Ilmu Pendidikan" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 2. FPIPS -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/img_u4wbiyrq64g4abq2qpzrdf2pxatme5mnncutfipx" />
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:layout_gravity="bottom" android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:background="#444444" android:gravity="center" android:paddingHorizontal="8dp" android:text="FPIPS" android:textColor="@color/white" android:textSize="10sp" />
+                                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Ilmu Pengetahuan Sosial" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 3. FPBS -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/img_y51jebmqhctzr6166rw36x42zatkzanfm319fcgd" />
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:layout_gravity="bottom" android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:background="#444444" android:gravity="center" android:paddingHorizontal="8dp" android:text="FPBS" android:textColor="@color/white" android:textSize="10sp" />
+                                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Bahasa dan Sastra" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 4. FPMIPA -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/img_a433kiutzrs7le1gyj9prjn8cmkswh5wuf067tbp" />
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:layout_gravity="bottom" android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:background="#444444" android:gravity="center" android:paddingHorizontal="8dp" android:text="FPMIPA" android:textColor="@color/white" android:textSize="10sp" />
+                                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Matematika dan Ilmu Pengetahuan Alam" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 5. FPTK -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/img_6g2cudkdlqzk1pym7j6icnh5jnemkcnhfcxnjoyxe" />
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:layout_gravity="bottom" android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:background="#444444" android:gravity="center" android:paddingHorizontal="8dp" android:text="FPTK" android:textColor="@color/white" android:textSize="10sp" />
+                                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Teknologi dan Industri" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 6. FPOK -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/img_jkff1k8ftxri1ii0vcxbw7dblhfvcwsxzeo64ndb" />
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:layout_gravity="bottom" android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:background="#444444" android:gravity="center" android:paddingHorizontal="8dp" android:text="FPOK" android:textColor="@color/white" android:textSize="10sp" />
+                                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Olahraga dan Kesehatan" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 7. FPEB -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/img_o0sxhonjjzm9wouy0qffnjaxuvp70hy0o8vk69rx" />
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:layout_gravity="bottom" android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:background="#444444" android:gravity="center" android:paddingHorizontal="8dp" android:text="FPEB" android:textColor="@color/white" android:textSize="10sp" />
+                                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Ekonomi dan Bisnis" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 8. FPSD -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/img_rlaxoizvwpqpzpemsla26xsjxza09cns0rtqpno" />
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:layout_gravity="bottom" android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:background="#444444" android:gravity="center" android:paddingHorizontal="8dp" android:text="FPSD" android:textColor="@color/white" android:textSize="10sp" />
+                                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Seni dan Desain" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- 9. FK -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="120dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:src="@drawable/img_5xkinkc08nemaaspzqlo7duk9gfvy1aqd4sgro3e" />
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="24dp" android:layout_gravity="bottom" android:orientation="horizontal">
+                                <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:background="#444444" android:gravity="center" android:paddingHorizontal="8dp" android:text="FK" android:textColor="@color/white" android:textSize="10sp" />
+                                <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
+                            </LinearLayout>
+                        </FrameLayout>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Kedokteran" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- HEADER Area -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="#22000000"
+            android:paddingHorizontal="16dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <ImageView android:layout_width="28dp" android:layout_height="20dp" android:src="@drawable/uk" android:scaleType="fitXY" />
+                <ImageView android:layout_width="28dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@drawable/id" android:scaleType="fitXY" />
+            </LinearLayout>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_menu_share" app:tint="@color/white" />
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_menu_send" app:tint="@color/white" />
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_media_play" app:tint="@color/white" />
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_menu_camera" app:tint="@color/white" />
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_menu_view" app:tint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp">
+            <ImageView android:layout_width="120dp" android:layout_height="40dp" android:src="@drawable/upi_logo_white" android:scaleType="fitStart" />
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+            <ImageView android:layout_width="100dp" android:layout_height="30dp" android:src="@drawable/diktisaintek_berdampak" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- BOTTOM NAVBAR -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/primary_maroon"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/nav_beranda"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_today" app:tint="@color/white"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beranda" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_tentang"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_info_details" app:tint="@color/white"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tentang" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_fakultas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_sort_by_size" app:tint="@color/accent_gold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fakultas" android:textColor="@color/accent_gold" android:textSize="10sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_penelitian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_search" app:tint="@color/white"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Penelitian" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
