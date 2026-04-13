@@ -17,7 +17,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
 
             <!-- 1. Hero Section (Slider) -->
             <FrameLayout
@@ -335,14 +336,14 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
-    <!-- HEADER Area LAST to be on top of Z-order -->
+    <!-- HEADER Area (Top Navbar) -->
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="0dp"
         android:background="@android:color/transparent">
 
-        <!-- 1. Top Bar -->
+        <!-- Top Language/Icons Bar -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -350,110 +351,137 @@
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:paddingHorizontal="16dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="14dp"
-                    android:src="@drawable/uk"
-                    android:scaleType="fitXY" />
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="14dp"
-                    android:layout_marginStart="10dp"
-                    android:src="@drawable/id"
-                    android:scaleType="fitXY" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView android:layout_width="20dp" android:layout_height="14dp" android:src="@drawable/uk" android:scaleType="fitXY" />
+                <ImageView android:layout_width="20dp" android:layout_height="14dp" android:layout_marginStart="10dp" android:src="@drawable/id" android:scaleType="fitXY" />
             </LinearLayout>
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@drawable/ic_launcher_foreground" app:tint="@color/white" />
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_menu_share" app:tint="@color/white" />
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_menu_send" app:tint="@color/white" />
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_media_play" app:tint="@color/white" />
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_menu_camera" app:tint="@color/white" />
+                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_menu_view" app:tint="@color/white" />
             </LinearLayout>
         </LinearLayout>
-
-        <!-- 2. Floating Navbar -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:layout_marginHorizontal="12dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            app:cardBackgroundColor="@color/primary_maroon"
-            app:cardCornerRadius="32dp"
-            app:cardElevation="4dp"
-            app:strokeWidth="0dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:paddingHorizontal="16dp">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="28dp"
-                    android:src="@drawable/upi_logo_white"
-                    android:scaleType="fitCenter" />
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="20dp"
-                    android:layout_marginHorizontal="8dp"
-                    android:background="#60FFFFFF" />
-
-                <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="22dp"
-                    android:src="@drawable/diktisaintek_berdampak"
-                    android:scaleType="fitCenter" />
-
-                <HorizontalScrollView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:scrollbars="none"
-                    android:layout_marginStart="8dp">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal">
-                        <TextView style="@style/NavMenuItem" android:text="Beranda" android:textColor="@color/accent_gold" />
-                        <TextView style="@style/NavMenuItem" android:text="Tentang ▾" />
-                        <TextView style="@style/NavMenuItem" android:text="Pendidikan ▾" />
-                        <TextView style="@style/NavMenuItem" android:text="Penelitian" />
-                        <TextView style="@style/NavMenuItem" android:text="Pengabdian" />
-                        <TextView style="@style/NavMenuItem" android:text="Admisi" />
-                        <TextView style="@style/NavMenuItem" android:text="Berita" />
-                    </LinearLayout>
-                </HorizontalScrollView>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_launcher_foreground"
-                    app:tint="@color/white" />
-
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!-- BOTTOM NAVBAR (Main Navigation) -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/primary_maroon"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Beranda -->
+            <LinearLayout
+                android:id="@+id/nav_beranda"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_menu_today"
+                    app:tint="@color/accent_gold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beranda"
+                    android:textColor="@color/accent_gold"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Tentang Kampus -->
+            <LinearLayout
+                android:id="@+id/nav_tentang"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_menu_info_details"
+                    app:tint="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tentang Kampus"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Fakultas -->
+            <LinearLayout
+                android:id="@+id/nav_fakultas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_menu_sort_by_size"
+                    app:tint="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fakultas"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!-- Penelitian -->
+            <LinearLayout
+                android:id="@+id/nav_penelitian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_menu_search"
+                    app:tint="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penelitian"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

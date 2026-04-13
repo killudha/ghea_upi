@@ -1,5 +1,6 @@
 package com.example.ghea_upi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -41,6 +42,19 @@ public class MainActivity extends AppCompatActivity {
 
         setupHeroSlider();
         setupNewsSlider();
+        setupBottomNav();
+    }
+
+    private void setupBottomNav() {
+        findViewById(R.id.nav_tentang).setOnClickListener(v -> {
+            startActivity(new Intent(this, TentangKampusActivity.class));
+        });
+        findViewById(R.id.nav_fakultas).setOnClickListener(v -> {
+            startActivity(new Intent(this, FakultasActivity.class));
+        });
+        findViewById(R.id.nav_penelitian).setOnClickListener(v -> {
+            startActivity(new Intent(this, PenelitianActivity.class));
+        });
     }
 
     private void setupHeroSlider() {
@@ -78,9 +92,11 @@ public class MainActivity extends AppCompatActivity {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                int nextItem = (viewPager.getCurrentItem() + 1) % viewPager.getAdapter().getItemCount();
-                viewPager.setCurrentItem(nextItem, true);
-                sliderHandler.postDelayed(this, 5000); // Slide every 5 seconds
+                if (viewPager.getAdapter() != null) {
+                    int nextItem = (viewPager.getCurrentItem() + 1) % viewPager.getAdapter().getItemCount();
+                    viewPager.setCurrentItem(nextItem, true);
+                    sliderHandler.postDelayed(this, 5000); // Slide every 5 seconds
+                }
             }
         };
         sliderHandler.postDelayed(runnable, 5000);
