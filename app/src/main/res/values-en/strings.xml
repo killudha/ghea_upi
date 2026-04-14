@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">ghea_upi</string>
+    <string name="berita_upi">UPI News</string>
+    <string name="selengkapnya">Read More</string>
+    <string name="lihat_semua">View All</string>
+    <string name="akademik">ACADEMIC</string>
+    <string name="penelitian">RESEARCH</string>
+    <string name="pengabdian">COMMUNITY SERVICE</string>
+    <string name="hero_title">Soaring Together\nFor a Glorious UPI</string>
+    <string name="hero_subtitle">Advancing science, developing talent, and strengthening Indonesia\'s global reputation through education and innovation</string>
+    <string name="news_title_1">Targeting International Quality, YPSL Bumi Siliwangi Strengthens Synergy Through Halalbihalal</string>
+    <string name="news_desc_1">Bandung, UPI - The Laboratory School Provider Foundation (YPSL) Bumi Siliwangi held a family Halalbihalal with the theme \"Ramadan and Eid al-Fitr Wisdom to Boost...</string>
+    <string name="news_title_2">UPI Wins 2024 Impactful Diktisaintek Award</string>
+    <string name="news_desc_2">Universitas Pendidikan Indonesia once again achieved brilliant success by winning the 2024 Impactful Diktisaintek category award...</string>
+    <string name="news_title_3">UPI\'s Digital Education Innovation in the Global Era</string>
+    <string name="news_desc_3">UPI continues to drive digital transformation in the national education system through various technological innovations developed by the academic community...</string>
+    <string name="lokasi_kampus">UPI Campus Locations</string>
+    <string name="kampus_utama">UPI Main Campus Bandung</string>
+    <string name="kampus_purwakarta">UPI Purwakarta Campus</string>
+    <string name="kehidupan_kampus_title">UPI Campus\nLife</string>
+    <string name="kehidupan_kampus_desc">Life at Universitas Pendidikan Indonesia (UPI) is not just about studying, but also about growing and contributing beyond academic boundaries.</string>
+    <string name="tautan">Links</string>
+    <string name="tautan_list">• Student Portal\n• Faculty Portal\n• Library\n• UPI Journal</string>
+    <string name="kontak_kami">Contact Us</string>
+    <string name="alamat_footer">Jl. Dr. Setiabudhi No. 229 Bandung 40154\nE-mail: humas@upi.edu</string>
+    <string name="copyright">© 2025 - Universitas Pendidikan Indonesia</string>
+
+    <string name="nav_beranda">Home</string>
+    <string name="nav_tentang">About</string>
+    <string name="nav_fakultas">Faculty</string>
+    <string name="nav_fasilitas">Facility</string>
+
+    <string name="title_fasilitas">Facility</string>
+    <string name="section_umum">GENERAL</string>
+    <string name="fasilitas_pembelajaran_title">Learning Facilities</string>
+    <string name="fasilitas_pembelajaran_desc">UPI has various facilities to support its commitment as a leading and outstanding university, including the following:\n\na. 123 Lecture Rooms used from 07.00 - 18.00 WIB.\nb. Library with a collection of 69,802 book titles or about 143,836 copies.\nc. Micro teaching, which serves as a means for developing practitioners as prospective teachers.\nd. Language Center with a complete Language Laboratory.\ne. Guidance and Counseling Technical Implementation Unit.</string>
+    <string name="asrama_mahasiswa_title">Student Dormitory</string>
+    <string name="asrama_mahasiswa_desc">The University provides several supporting facilities for its students to gain comfort in studying and living on campus. Dormitories are provided for male and female students scattered in various campus locations.</string>
+    <string name="section_olahraga">SPORTS</string>
+    <string name="fasilitas_olahraga_title">Sports Facilities</string>
+    <string name="fasilitas_olahraga_desc">To support the development of student skills in physical education and develop student talent, UPI provides sports facilities as follows:\n\na. Sports Hall\nb. Soccer Field\nc. Volleyball Court\nd. Badminton Court\ne. Basketball Court\nf. Softball Field\ng. Tennis Court\nh. Swimming Pool</string>
+
+    <string name="title_fakultas">Faculty</string>
+    <string name="akademik_subtitle">Academic</string>
+    <string name="fakultas_intro_text">Universitas Pendidikan Indonesia organizes various education programs including undergraduate, postgraduate, professional, specialist, and diploma programs.</string>
+    <string name="fip_full">Faculty of Education</string>
+    <string name="fpips_full">Faculty of Social Sciences Education</string>
+    <string name="fpbs_full">Faculty of Language and Literature Education</string>
+    <string name="fpmipa_full">Faculty of Mathematics and Natural Sciences Education</string>
+    <string name="fptk_full">Faculty of Technology and Vocational Education</string>
+    <string name="fpok_full">Faculty of Sports and Health Education</string>
+    <string name="fpeb_full">Faculty of Economics and Business Education</string>
+    <string name="fpsd_full">Faculty of Arts and Design Education</string>
+    <string name="fk_full">Faculty of Medicine</string>
+
+    <string name="title_penelitian">Research</string>
+    <string name="riset_inovasi_title">Research &amp; Innovation</string>
+    <string name="penelitian_intro_text">Universitas Pendidikan Indonesia continues to be committed to improving the quality and quantity of research as a manifestation of the Tridharma of Higher Education. Through the Institute for Research and Community Service (LPPM), UPI facilitates various innovative research activities that have a wide impact on society.</string>
+    <string name="fokus_penelitian_title">Research Focus</string>
+    <string name="fokus_penelitian_list">1. Education and Learning Innovation\n2. Pure Science Development\n3. Applied Technology and Engineering\n4. Social Sciences, Humanities, and Arts\n5. Community Empowerment and Public Policy</string>
+
+    <string name="kontak_alamat">Universitas Pendidikan Indonesia\nJl. Dr. Setiabudhi No. 229 Bandung\n40154 West Java - Indonesia\n\nE-mail: sekuniv_upi@upi.edu</string>
+
+    <string name="shortcut_berita_text">UPI NEWS</string>
+    <string name="shortcut_lokasi_text">CAMPUS LOCATIONS</string>
+    <string name="shortcut_kehidupan_text">CAMPUS LIFE</string>
+</resources>

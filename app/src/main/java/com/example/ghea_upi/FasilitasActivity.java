@@ -6,12 +6,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FakultasActivity extends AppCompatActivity {
+public class FasilitasActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         LocaleHelper.loadLocale(this);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fakultas);
+        setContentView(R.layout.activity_fasilitas);
 
         setupBottomNav();
         setupLanguageSwitch();
@@ -28,8 +28,8 @@ public class FakultasActivity extends AppCompatActivity {
             finish();
             overridePendingTransition(0, 0);
         });
-        findViewById(R.id.nav_fasilitas).setOnClickListener(v -> {
-            startActivity(new Intent(this, FasilitasActivity.class));
+        findViewById(R.id.nav_fakultas).setOnClickListener(v -> {
+            startActivity(new Intent(this, FakultasActivity.class));
             finish();
             overridePendingTransition(0, 0);
         });

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <!-- 1. Header Spacer -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="145dp" />
+
+            <!-- 2. Subheader -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_maroon"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_fasilitas"
+                    android:textColor="#E0E0E0"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Section UMUM -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/section_umum"
+                    android:textColor="@color/primary_maroon"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/primary_maroon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/fasilitas_pembelajaran_title"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/fasilitas_pembelajaran_desc"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/asrama_mahasiswa_title"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/asrama_mahasiswa_desc"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Section OLAHRAGA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/section_olahraga"
+                    android:textColor="@color/primary_maroon"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/primary_maroon" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_marginTop="24dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kolam" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/fasilitas_olahraga_title"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/fasilitas_olahraga_desc"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- HEADER Area -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:background="@android:color/transparent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#88000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="36dp"
+            android:paddingBottom="12dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <ImageView android:id="@+id/btn_lang_en" android:layout_width="32dp" android:layout_height="22dp" android:src="@drawable/uk" android:scaleType="fitXY" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageView android:id="@+id/btn_lang_id" android:layout_width="32dp" android:layout_height="22dp" android:layout_marginStart="12dp" android:src="@drawable/id" android:scaleType="fitXY" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless" />
+            </LinearLayout>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#88000000"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp">
+            <ImageView android:layout_width="130dp" android:layout_height="40dp" android:src="@drawable/upi_logo_white" android:scaleType="fitStart" />
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+            <ImageView android:layout_width="100dp" android:layout_height="30dp" android:src="@drawable/diktisaintek_berdampak" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- BOTTOM NAVBAR -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/primary_maroon"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/nav_beranda"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_menu_today" app:tint="@color/white"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_beranda" android:textColor="@color/white" android:textSize="11sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_tentang"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_menu_info_details" app:tint="@color/white"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_tentang" android:textColor="@color/white" android:textSize="11sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_fakultas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_menu_sort_by_size" app:tint="@color/white"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_fakultas" android:textColor="@color/white" android:textSize="11sp" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/nav_fasilitas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_menu_search" app:tint="@color/accent_gold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_fasilitas" android:textColor="@color/accent_gold" android:textSize="11sp" android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

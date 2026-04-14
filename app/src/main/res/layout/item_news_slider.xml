@@ -40,18 +40,8 @@
             android:textSize="12sp"
             android:alpha="0.85"
             android:lineSpacingMultiplier="1.2"
-            android:maxLines="4"
+            android:maxLines="6"
             android:ellipsize="end" />
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Selengkapnya"
-            app:cornerRadius="4dp"
-            android:backgroundTint="#8A0000"
-            android:textColor="@color/white"
-            android:paddingHorizontal="16dp"
-            android:textAllCaps="false" />
     </LinearLayout>
 
     <com.google.android.material.card.MaterialCardView

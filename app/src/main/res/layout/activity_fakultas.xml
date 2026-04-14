@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
             <!-- 1. Header Spacer -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="108dp" />
+                android:layout_height="145dp" />
 
             <!-- 2. Subheader -->
             <LinearLayout
@@ -33,9 +34,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Beranda  >  Fakultas"
+                    android:text="@string/title_fakultas"
                     android:textColor="#E0E0E0"
-                    android:textSize="12sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <!-- 3. Intro Section -->
@@ -76,7 +77,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
-                    android:text="Akademik"
+                    android:text="@string/akademik_subtitle"
                     android:textColor="@color/primary_maroon"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -84,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Fakultas"
+                    android:text="@string/title_fakultas"
                     android:textColor="#333333"
                     android:textSize="32sp"
                     android:textStyle="bold" />
@@ -93,12 +94,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:lineSpacingExtra="4dp"
-                    android:text="Universitas Pendidikan Indonesia menyelenggarakan berbagai program pendidikan meliputi program sarjana, pascasarjana, profesi, spesialis, dan diploma."
+                    android:text="@string/fakultas_intro_text"
                     android:textColor="#666666"
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <!-- 4. Faculty Grid (9 Items) -->
+            <!-- 4. Faculty Grid -->
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -125,7 +126,7 @@
                                 <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
                             </LinearLayout>
                         </FrameLayout>
-                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Ilmu Pendidikan" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="@string/fip_full" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -149,7 +150,7 @@
                                 <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
                             </LinearLayout>
                         </FrameLayout>
-                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Ilmu Pengetahuan Sosial" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="@string/fpips_full" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -173,7 +174,7 @@
                                 <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
                             </LinearLayout>
                         </FrameLayout>
-                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Bahasa dan Sastra" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="@string/fpbs_full" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -197,7 +198,7 @@
                                 <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
                             </LinearLayout>
                         </FrameLayout>
-                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Matematika dan Ilmu Pengetahuan Alam" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="@string/fpmipa_full" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -221,7 +222,7 @@
                                 <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
                             </LinearLayout>
                         </FrameLayout>
-                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Teknologi dan Industri" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="@string/fptk_full" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -245,7 +246,7 @@
                                 <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
                             </LinearLayout>
                         </FrameLayout>
-                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Olahraga dan Kesehatan" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="@string/fpok_full" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -269,7 +270,7 @@
                                 <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
                             </LinearLayout>
                         </FrameLayout>
-                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Ekonomi dan Bisnis" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="@string/fpeb_full" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -293,7 +294,7 @@
                                 <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
                             </LinearLayout>
                         </FrameLayout>
-                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Pendidikan Seni dan Desain" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="@string/fpsd_full" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
@@ -317,7 +318,7 @@
                                 <View android:layout_width="match_parent" android:layout_height="match_parent" android:background="#E31E24" />
                             </LinearLayout>
                         </FrameLayout>
-                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="Fakultas Kedokteran" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="12dp" android:text="@string/fk_full" android:textColor="#333333" android:textSize="12sp" android:textStyle="bold" />
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </GridLayout>
@@ -332,31 +333,26 @@
         android:background="@android:color/transparent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
+            android:background="#88000000"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:background="#22000000"
-            android:paddingHorizontal="16dp">
+            android:paddingHorizontal="16dp"
+            android:paddingTop="36dp"
+            android:paddingBottom="12dp">
             <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
-                <ImageView android:layout_width="28dp" android:layout_height="20dp" android:src="@drawable/uk" android:scaleType="fitXY" />
-                <ImageView android:layout_width="28dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@drawable/id" android:scaleType="fitXY" />
+                <ImageView android:id="@+id/btn_lang_en" android:layout_width="32dp" android:layout_height="22dp" android:src="@drawable/uk" android:scaleType="fitXY" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless" />
+                <ImageView android:id="@+id/btn_lang_id" android:layout_width="32dp" android:layout_height="22dp" android:layout_marginStart="12dp" android:src="@drawable/id" android:scaleType="fitXY" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless" />
             </LinearLayout>
             <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
-            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
-                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_menu_share" app:tint="@color/white" />
-                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_menu_send" app:tint="@color/white" />
-                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_media_play" app:tint="@color/white" />
-                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_menu_camera" app:tint="@color/white" />
-                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginStart="12dp" android:src="@android:drawable/ic_menu_view" app:tint="@color/white" />
-            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@android:color/transparent"
+            android:background="#88000000"
             android:gravity="center_vertical"
             android:paddingHorizontal="16dp">
-            <ImageView android:layout_width="120dp" android:layout_height="40dp" android:src="@drawable/upi_logo_white" android:scaleType="fitStart" />
+            <ImageView android:layout_width="130dp" android:layout_height="40dp" android:src="@drawable/upi_logo_white" android:scaleType="fitStart" />
             <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
             <ImageView android:layout_width="100dp" android:layout_height="30dp" android:src="@drawable/diktisaintek_berdampak" android:scaleType="fitCenter" />
         </LinearLayout>
@@ -365,11 +361,11 @@
     <!-- BOTTOM NAVBAR -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:layout_gravity="bottom"
         android:layout_margin="16dp"
         app:cardBackgroundColor="@color/primary_maroon"
-        app:cardCornerRadius="35dp"
+        app:cardCornerRadius="40dp"
         app:cardElevation="8dp"
         app:strokeWidth="0dp">
         <LinearLayout
@@ -387,8 +383,8 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground">
-                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_today" app:tint="@color/white"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beranda" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold"/>
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_menu_today" app:tint="@color/white"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_beranda" android:textColor="@color/white" android:textSize="11sp" android:textStyle="bold"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/nav_tentang"
@@ -400,8 +396,8 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground">
-                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_info_details" app:tint="@color/white"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tentang" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold"/>
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_menu_info_details" app:tint="@color/white"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_tentang" android:textColor="@color/white" android:textSize="11sp" android:textStyle="bold"/>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/nav_fakultas"
@@ -413,11 +409,11 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground">
-                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_sort_by_size" app:tint="@color/accent_gold"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fakultas" android:textColor="@color/accent_gold" android:textSize="10sp" android:textStyle="bold"/>
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_menu_sort_by_size" app:tint="@color/accent_gold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_fakultas" android:textColor="@color/accent_gold" android:textSize="11sp" android:textStyle="bold"/>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/nav_penelitian"
+                android:id="@+id/nav_fasilitas"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -426,8 +422,8 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground">
-                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@android:drawable/ic_menu_search" app:tint="@color/white"/>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Penelitian" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold"/>
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@android:drawable/ic_menu_search" app:tint="@color/white"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nav_fasilitas" android:textColor="@color/white" android:textSize="11sp" android:textStyle="bold"/>
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>

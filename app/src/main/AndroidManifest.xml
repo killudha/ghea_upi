@@ -6,23 +6,38 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/upi_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/upi_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ghea_upi">
+
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataService"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="androidx.appcompat.app.AppLocalesMetadata" />
+            </intent-filter>
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Ghea_upi.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TentangKampusActivity" />
-        <activity android:name=".FakultasActivity" />
-        <activity android:name=".PenelitianActivity" />
+
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".TentangKampusActivity" android:exported="false" />
+        <activity android:name=".FakultasActivity" android:exported="false" />
+        <activity android:name=".FasilitasActivity" android:exported="false" />
     </application>
 
 </manifest>

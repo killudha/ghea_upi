@@ -7,7 +7,7 @@
     <string name="penelitian">PENELITIAN</string>
     <string name="pengabdian">PENGABDIAN</string>
     <string name="hero_title">Melesat Bersama\nDemi UPI Gemilang</string>
-    <string name="hero_subtitle">Memajukan ilmu pengetahuan, mengembangkan bakat, dan memperkuat reputasi global Indonesia</string>
+    <string name="hero_subtitle">Memajukan ilmu pengetahuan, mengembangkan bakat, dan memperkuat reputasi global Indonesia melalui pendidikan dan inovasi</string>
     <string name="news_title_1">Targetkan Mutu Internasional, YPSL Bumi Siliwangi Perkuat Sinergi Lewat Halalbihalal</string>
     <string name="news_desc_1">Bandung, UPI Yayasan Penyelenggara Sekolah Laboratorium (YPSL) Bumi Siliwangi menyelenggarakan Halalbihalal keluarga besar dengan tema \"Hikmah Ramadhan dan Idul Fitri untuk Memacu&#8230;</string>
     <string name="news_title_2">UPI Raih Penghargaan Diktisaintek Berdampak 2024</string>
@@ -24,4 +24,50 @@
     <string name="kontak_kami">Kontak Kami</string>
     <string name="alamat_footer">Jl. Dr. Setiabudhi No. 229 Bandung 40154\nE-mail: humas@upi.edu</string>
     <string name="copyright">© 2025 - Universitas Pendidikan Indonesia</string>
+
+    <!-- Navigation -->
+    <string name="nav_beranda">Beranda</string>
+    <string name="nav_tentang">Tentang</string>
+    <string name="nav_fakultas">Fakultas</string>
+    <string name="nav_fasilitas">Fasilitas</string>
+
+    <!-- Fasilitas -->
+    <string name="title_fasilitas">Fasilitas</string>
+    <string name="section_umum">UMUM</string>
+    <string name="fasilitas_pembelajaran_title">Fasilitas Pembelajaran</string>
+    <string name="fasilitas_pembelajaran_desc">UPI memiliki berbagai fasilitas untuk mendukung komitmennya sebagai universitas pelopor dan unggul di antara yang adalah sebagai berikut:\n\na. Ruang Kuliah berjumlah 123 kelas yang dipergunakan mulai pukul 07.00 - 18.00 WIB.\nb. Perpustakaan dengan koleksi 69.802 judul buku atau sekitar 143.836 eksemplar.\nc. Micro teaching, yang berfungsi sebagai sarana pengembangan pribadi praktikan sebagai calon guru.\nd. Balai Bahasa dengan Laboratorium Bahasa yang lengkap.\ne. Unit Pelaksana Teknis Bimbingan dan Konseling.</string>
+    <string name="asrama_mahasiswa_title">Asrama Mahasiswa</string>
+    <string name="asrama_mahasiswa_desc">Universitas menyediakan beberapa fasilitas pendukung bagi mahasiswanya untuk mendapatkan kenyamanan belajar dan tinggal di kampus. Asrama disediakan untuk mahasiswa putra dan putri yang tersebar di berbagai lokasi kampus.</string>
+    <string name="section_olahraga">OLAHRAGA</string>
+    <string name="fasilitas_olahraga_title">Fasilitas Olahraga</string>
+    <string name="fasilitas_olahraga_desc">Untuk mendukung pengembangan keterampilan mahasiswa dalam pendidikan olahraga serta mengembangkan bakat mahasiswa, UPI menyediakan fasilitas olah raga sebagai berikut:\n\na. Gedung Olahraga\nb. Lapangan Sepak Bola\nc. Lapangan Bola Voli\nd. Lapangan Bulu Tangkis\ne. Lapangan Bola Basket\nf. Lapangan Soft Ball\ng. Lapangan Tenis\nh. Kolam Renang</string>
+
+    <!-- Fakultas -->
+    <string name="title_fakultas">Fakultas</string>
+    <string name="akademik_subtitle">Akademik</string>
+    <string name="fakultas_intro_text">Universitas Pendidikan Indonesia menyelenggarakan berbagai program pendidikan meliputi program sarjana, pascasarjana, profesi, spesialis, dan diploma.</string>
+    <string name="fip_full">Fakultas Ilmu Pendidikan</string>
+    <string name="fpips_full">Fakultas Pendidikan Ilmu Pengetahuan Sosial</string>
+    <string name="fpbs_full">Fakultas Pendidikan Bahasa dan Sastra</string>
+    <string name="fpmipa_full">Fakultas Pendidikan Matematika dan Ilmu Pengetahuan Alam</string>
+    <string name="fptk_full">Fakultas Pendidikan Teknologi dan Industri</string>
+    <string name="fpok_full">Fakultas Pendidikan Olahraga dan Kesehatan</string>
+    <string name="fpeb_full">Fakultas Pendidikan Ekonomi dan Bisnis</string>
+    <string name="fpsd_full">Fakultas Pendidikan Seni dan Desain</string>
+    <string name="fk_full">Fakultas Kedokteran</string>
+
+    <!-- Penelitian -->
+    <string name="title_penelitian">Penelitian</string>
+    <string name="riset_inovasi_title">Riset &amp; Inovasi</string>
+    <string name="penelitian_intro_text">Universitas Pendidikan Indonesia terus berkomitmen untuk meningkatkan kualitas dan kuantitas penelitian sebagai perwujudan dari Tridharma Perguruan Tinggi. Melalui Lembaga Penelitian dan Pengabdian kepada Masyarakat (LPPM), UPI memfasilitasi berbagai kegiatan riset inovatif yang berdampak luas bagi masyarakat.</string>
+    <string name="fokus_penelitian_title">Fokus Penelitian</string>
+    <string name="fokus_penelitian_list">1. Inovasi Pendidikan dan Pembelajaran\n2. Pengembangan Ilmu Pengetahuan Murni\n3. Teknologi dan Rekayasa Terapan\n4. Sosial Humaniora dan Seni\n5. Pemberdayaan Masyarakat dan Kebijakan Publik</string>
+
+    <!-- Kontak -->
+    <string name="kontak_alamat">Universitas Pendidikan Indonesia\nJl. Dr. Setiabudhi No. 229 Bandung\n40154 Jawa Barat - Indonesia\n\nE-mail: sekuniv_upi@upi.edu</string>
+
+    <!-- Shortcuts -->
+    <string name="shortcut_berita_text">BERITA UPI</string>
+    <string name="shortcut_lokasi_text">LOKASI KAMPUS</string>
+    <string name="shortcut_kehidupan_text">KEHIDUPAN KAMPUS</string>
 </resources>

@@ -10,6 +10,7 @@
 
     <!-- Content Area -->
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/main_scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -37,59 +38,75 @@
                     android:layout_gravity="bottom"
                     android:orientation="horizontal"
                     android:paddingHorizontal="4dp"
-                    android:elevation="10dp">
+                    android:elevation="10dp"
+                    android:baselineAligned="false">
                     <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/shortcut_berita"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_margin="2dp"
                         app:cardBackgroundColor="#CC9F0612"
                         app:cardCornerRadius="4dp"
-                        app:cardElevation="0dp">
+                        app:cardElevation="0dp"
+                        android:clickable="true"
+                        android:focusable="true">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="AKADEMIK"
+                            android:text="@string/shortcut_berita_text"
                             android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:gravity="center"
                             android:textStyle="bold" />
                     </com.google.android.material.card.MaterialCardView>
                     <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/shortcut_lokasi"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_margin="2dp"
                         app:cardBackgroundColor="#CC9F0612"
                         app:cardCornerRadius="4dp"
-                        app:cardElevation="0dp">
+                        app:cardElevation="0dp"
+                        android:clickable="true"
+                        android:focusable="true">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="PENELITIAN"
+                            android:text="@string/shortcut_lokasi_text"
                             android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:gravity="center"
                             android:textStyle="bold" />
                     </com.google.android.material.card.MaterialCardView>
                     <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/shortcut_kehidupan"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:layout_margin="2dp"
                         app:cardBackgroundColor="#CC9F0612"
                         app:cardCornerRadius="4dp"
-                        app:cardElevation="0dp">
+                        app:cardElevation="0dp"
+                        android:clickable="true"
+                        android:focusable="true">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:text="PENGABDIAN"
+                            android:text="@string/shortcut_kehidupan_text"
                             android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:gravity="center"
                             android:textStyle="bold" />
                     </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
             </FrameLayout>
 
-            <!-- 2. Berita UPI Section (Slider) - FIXED HEIGHT -->
+            <!-- 2. Berita UPI Section (Slider) -->
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/news_viewpager"
                 android:layout_width="match_parent"
@@ -98,6 +115,7 @@
 
             <!-- 3. Lokasi Kampus UPI Section -->
             <LinearLayout
+                android:id="@+id/section_lokasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -106,7 +124,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Lokasi Kampus UPI"
+                    android:text="@string/lokasi_kampus"
                     android:textColor="@color/text_dark"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -144,7 +162,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingHorizontal="14dp"
                                 android:paddingVertical="8dp"
-                                android:text="Kampus Utama UPI Bandung"
+                                android:text="@string/kampus_utama"
                                 android:textColor="@color/white"
                                 android:textSize="10sp"
                                 android:textStyle="bold" />
@@ -179,7 +197,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingHorizontal="14dp"
                                 android:paddingVertical="8dp"
-                                android:text="Kampus UPI Purwakarta"
+                                android:text="@string/kampus_purwakarta"
                                 android:textColor="@color/white"
                                 android:textSize="10sp"
                                 android:textStyle="bold" />
@@ -190,6 +208,7 @@
 
             <!-- 4. Kehidupan Kampus UPI Section -->
             <LinearLayout
+                android:id="@+id/section_kehidupan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/primary_maroon"
@@ -198,7 +217,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kehidupan\nKampus UPI"
+                    android:text="@string/kehidupan_kampus_title"
                     android:textColor="@color/white"
                     android:textSize="32sp"
                     android:textStyle="bold" />
@@ -206,7 +225,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Kehidupan di Universitas Pendidikan Indonesia (UPI) bukan hanya tentang belajar, tetapi juga tentang berkembang dan berkontribusi melampaui batas akademik."
+                    android:text="@string/kehidupan_kampus_desc"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
                 <FrameLayout
@@ -287,37 +306,6 @@
                     android:scaleType="fitStart"
                     android:src="@drawable/upi_logo_white" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:text="Tautan"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="• Portal Mahasiswa\n• Portal Dosen\n• Perpustakaan\n• Jurnal UPI"
-                    android:textColor="@color/white"
-                    android:lineSpacingExtra="4dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:text="Kontak Kami"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Jl. Dr. Setiabudhi No. 229 Bandung 40154\nE-mail: humas@upi.edu"
-                    android:textColor="@color/white" />
-
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -328,7 +316,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:gravity="center"
-                    android:text="© 2025 - Universitas Pendidikan Indonesia"
+                    android:text="@string/copyright"
                     android:textColor="#80FFFFFF"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -343,25 +331,36 @@
         android:elevation="0dp"
         android:background="@android:color/transparent">
 
-        <!-- Top Language/Icons Bar -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:background="#88000000"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingHorizontal="16dp">
-            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-                <ImageView android:layout_width="20dp" android:layout_height="14dp" android:src="@drawable/uk" android:scaleType="fitXY" />
-                <ImageView android:layout_width="20dp" android:layout_height="14dp" android:layout_marginStart="10dp" android:src="@drawable/id" android:scaleType="fitXY" />
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="36dp"
+                android:paddingBottom="12dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:id="@+id/btn_lang_en" android:layout_width="32dp" android:layout_height="22dp" android:src="@drawable/uk" android:scaleType="fitXY" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless" />
+                    <ImageView android:id="@+id/btn_lang_id" android:layout_width="32dp" android:layout_height="22dp" android:layout_marginStart="12dp" android:src="@drawable/id" android:scaleType="fitXY" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+                <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
             </LinearLayout>
-            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
-            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_menu_share" app:tint="@color/white" />
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_menu_send" app:tint="@color/white" />
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_media_play" app:tint="@color/white" />
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_menu_camera" app:tint="@color/white" />
-                <ImageView android:layout_width="16dp" android:layout_height="16dp" android:layout_marginStart="14dp" android:src="@android:drawable/ic_menu_view" app:tint="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp">
+                <ImageView android:layout_width="130dp" android:layout_height="40dp" android:src="@drawable/upi_logo_white" android:scaleType="fitStart" />
+                <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+                <ImageView android:layout_width="100dp" android:layout_height="30dp" android:src="@drawable/diktisaintek_berdampak" android:scaleType="fitCenter" />
             </LinearLayout>
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -369,11 +368,11 @@
     <!-- BOTTOM NAVBAR (Main Navigation) -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:layout_gravity="bottom"
         android:layout_margin="16dp"
         app:cardBackgroundColor="@color/primary_maroon"
-        app:cardCornerRadius="35dp"
+        app:cardCornerRadius="40dp"
         app:cardElevation="8dp"
         app:strokeWidth="0dp">
 
@@ -395,20 +394,20 @@
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground">
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:src="@android:drawable/ic_menu_today"
                     app:tint="@color/accent_gold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Beranda"
+                    android:text="@string/nav_beranda"
                     android:textColor="@color/accent_gold"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"/>
             </LinearLayout>
 
-            <!-- Tentang Kampus -->
+            <!-- Tentang -->
             <LinearLayout
                 android:id="@+id/nav_tentang"
                 android:layout_width="0dp"
@@ -420,16 +419,16 @@
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground">
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:src="@android:drawable/ic_menu_info_details"
                     app:tint="@color/white"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tentang Kampus"
+                    android:text="@string/nav_tentang"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"/>
             </LinearLayout>
 
@@ -445,22 +444,22 @@
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground">
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:src="@android:drawable/ic_menu_sort_by_size"
                     app:tint="@color/white"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fakultas"
+                    android:text="@string/nav_fakultas"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"/>
             </LinearLayout>
 
-            <!-- Penelitian -->
+            <!-- Fasilitas -->
             <LinearLayout
-                android:id="@+id/nav_penelitian"
+                android:id="@+id/nav_fasilitas"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -470,16 +469,16 @@
                 android:focusable="true"
                 android:background="?attr/selectableItemBackground">
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
                     android:src="@android:drawable/ic_menu_search"
                     app:tint="@color/white"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Penelitian"
+                    android:text="@string/nav_fasilitas"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"/>
             </LinearLayout>
         </LinearLayout>
